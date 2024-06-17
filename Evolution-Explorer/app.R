@@ -5,6 +5,7 @@ library(viridis)
 library(shinythemes)
 library(markdown)
 
+setwd(getSrcDirectory(function(){})[1])
 
 evo_data <- read.csv("../Evolution_DataSets.csv")
 colnames(evo_data)[colnames(evo_data) == "Genus_._Specie"] <- "Specie"
@@ -78,7 +79,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                     sidebarPanel(
                         selectInput("Var1", "X axis:", choices = numeric_cols, selected = colnames(evo_data)[1]),
                         selectInput("Var2", "Y axis:", choices = numeric_cols, selected = colnames(evo_data)[2]),
-                        selectInput("groupVar", "Group By (Optional):", choices = c("None", cat_cols, "Specie", numeric_cols), selected = "None"),
+                        selectInput("groupVar", "Group By (Optional):", choices = c("None", cat_cols, "Specie"), selected = "None"),
                         downloadButton("downloadVersusPlot", "Download Plot")
                     ),
                     mainPanel(
