@@ -383,7 +383,7 @@ server <- function(input, output, session){
             paste("time_scale_plot", Sys.Date(), ".png", sep = "")
         },
         content = function(file){
-            ggsave(file, plot = timePlot(), device = "png", width = 10, height = 6)
+            ggsave(file, plot = timePlot(), device = "png", width = 10, height = 6, bg = "white")
         }
     )
     
@@ -392,7 +392,7 @@ server <- function(input, output, session){
             paste("cranial_capacity_plot", Sys.Date(), ".png", sep = "")
         },
         content = function(file){
-            ggsave(file, plot = cranialPlot(), device = "png", width = 10, height = 6)
+            ggsave(file, plot = cranialPlot(), device = "png", width = 10, height = 6, bg = "white")
         }
     )
     
@@ -401,7 +401,7 @@ server <- function(input, output, session){
             paste("height_plot", Sys.Date(), ".png", sep = "")
         },
         content = function(file){
-            ggsave(file, plot = heightPlot(), device = "png", width = 10, height = 6)
+            ggsave(file, plot = heightPlot(), device = "png", width = 10, height = 6, bg = "white")
         }
     )
     
@@ -410,7 +410,7 @@ server <- function(input, output, session){
             paste("versus_plot", Sys.Date(), ".png", sep = "")
         },
         content = function(file){
-            ggsave(file, plot = versusPlot(), device = "png", width = 10, height = 6)
+            ggsave(file, plot = versusPlot(), device = "png", width = 10, height = 6, bg = "white")
         }
     )
     
@@ -419,7 +419,7 @@ server <- function(input, output, session){
             paste("bar_plot", Sys.Date(), ".png", sep = "")
         },
         content = function(file){
-            ggsave(file, plot = barPlot(), device = "png", width = 10, height = 6)
+            ggsave(file, plot = barPlot(), device = "png", width = 10, height = 6, bg = "white")
         }
     )
     
