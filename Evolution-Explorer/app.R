@@ -7,7 +7,7 @@ library(markdown)
 
 setwd(getSrcDirectory(function(){})[1])
 
-evo_data <- read.csv("../Evolution_DataSets.csv")
+evo_data <- read.csv("../images/Evolution_DataSets.csv")
 colnames(evo_data)[colnames(evo_data) == "Genus_._Specie"] <- "Specie"
 
 evo_data <- evo_data %>%
