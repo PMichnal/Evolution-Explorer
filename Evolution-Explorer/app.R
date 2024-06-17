@@ -41,7 +41,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
             ), # Time tabPanel
             tabPanel(
                 "Cranial Capacity",
-                titlePanel("Carnial Capacity of selected species over time"),
+                titlePanel("Cranial Capacity of Selected Species Over Time"),
                 sidebarLayout(
                     sidebarPanel(
                         selectInput("speciesCranial", "Select Species:", 
@@ -104,17 +104,17 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
             ) # Bar Plot tabPanel
             
         ), # Explore
-            tabPanel(
-                title="About Data",
-                div(includeMarkdown("../data.md"),
-                    align = "justify")
-            ), # Data tabPanel()
+        tabPanel(
+            title="About Data",
+            div(includeMarkdown("../data.md"),
+                align = "justify")
+        ), # Data tabPanel()
         
-            tabPanel(
-                title="Credits",
-                div(includeMarkdown("../credits.md"),
-                    align="justify")
-            ) # Credits tabPanel()
+        tabPanel(
+            title="Credits",
+            div(includeMarkdown("../credits.md"),
+                align="justify")
+        ) # Credits tabPanel()
     ) # navbarPage()
 ) # fluidPage()
 
