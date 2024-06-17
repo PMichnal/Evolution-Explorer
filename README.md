@@ -6,7 +6,7 @@ Using the explorer, you can generate different plots using data of hominid evolu
 
 ### Example plot generated using the Explorer
 
-![](readmefigures/example.png)
+![](images/example.png)
 
 ## How to use it
 
@@ -14,7 +14,7 @@ You can run the explorer using Rstudio.
 
 After opening it you have 5 options of exploration.
 
-![](readmefigures/explorationoptions.png)
+![](images/explorationoptions.png)
 
 ### Time, Cranial Capacity, Height
 
